@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>Pasty</title>
+    <link rel="stylesheet" href="flexboxgrid/dist/flexboxgrid.min.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    
+    <script src="sjcl/sjcl.js"></script>
+    <script src="jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="socket.io-client/socket.io.js" type="text/javascript" charset="utf-8"></script>
+    <script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="angular-ui-ace/ui-ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/editor.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/share.js" type="text/javascript" charset="utf-8"></script>
+  
+  </head>
+  <body ng-app="Pasty">
+
+
+    <!-- navbar -->
+    <ng-include src="'parts/navbar.html'"></ng-include>
+
+    <!-- editor -->
+    <div class="row">
+      <div class="col-xs-12">
+        <editor class="box"></editor>
+      </div>
+    </div>
+
+  </body>
+</html> 

@@ -1,0 +1,5 @@
+{
+  "port": 2642,
+  "contentDir": "../public",
+  "vendorDir": "../bower_components"
+}
