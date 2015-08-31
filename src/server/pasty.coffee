@@ -14,11 +14,8 @@ vendorDir = path.join __dirname, config.get 'vendorDir'
 port = config.get 'port'
 
 unique = ->
-  sjcl.codec.base64url.fromBits(
-    sjcl.codec.hex.toBits(
-      sjcl.random.randomWords(1)[0].toString(16)
-      )
-    )
+  sjcl.codec.base64url.fromBits sjcl.random.randomWords(2)
+
 
 
 createPasty = (id, io) ->
