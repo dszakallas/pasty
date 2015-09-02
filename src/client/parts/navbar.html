@@ -2,13 +2,36 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
       <a class="navbar-brand" href="#">Pasty</a>
-    </div>
+      <form novalidate class="navbar-form navbar-left">
+        <div class="btn-group">  
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-plus"></i>
+            New <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-file"></i></span>
+                <input ng-model="new.file" type="text" class="form-control input-dropdown" placeholder="name" aria-describedby="basic-addon1">
+              </div>
+            </li>
+            <li>
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon2"><i class="fa fa-key"></i></span>
+                <input ng-model="new.password" type="text" class="form-control input-dropdown" placeholder="password" aria-describedby="basic-addon2">
+              </div>
+            </li>
+            <li>
+            <button type="button" class="btn btn-default btn-fill">Create</li>
+          </ul>
+        </div>
+        <div class="btn-group">  
+          <button type="button" class="btn btn-default " data-toggle="tooltip" data-placement="bottom" title="Copy link to clipboard"><i class="fa fa-clipboard"></i>
+            Share link
+          </button>
+
+        </div>
+      </form>
+    </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
